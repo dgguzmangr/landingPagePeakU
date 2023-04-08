@@ -14,8 +14,12 @@
             <div class="row d-flex justify-content-center align-items-center py-5" style="background-color: var(--white2);">
                 <div v-for="(card, index) in cards.slice(0, numCards)" :key="index" class="col d-flex align-items-center justify-content-center px-4"  style="background-color: var(--white);">
                     <div class="d-flex flex-column align-items-center justify-content-center border rounded">
-                        <img loading="lazy" src="'http://127.0.0.1:8000/show-destinations/' + card.destination_img" class="img-fluid">
-                        <!--card footer "@/assets/img/Image-1.png"-->
+                        <img loading="lazy" src="@/assets/img/Image-1.png">
+
+                        <!--<img loading="lazy" :src="getImageUrl ('/media/destinations/Image-1.png')">-->
+                        <!--:src="destinations[0].destination_img"-->
+                        <!--"@/assets/img/Image-1.png"-->
+                        <!--card footer-->
                         <div class="py-5 mx-auto">
                             <div class="row d-flex justify-content-between">
                                 <div class="d-flex align-items-center text-left">
@@ -83,10 +87,13 @@
                 const cardsPerPage = 4;
                 const maxIndex = this.cards.length - cardsPerPage;
                 let index = this.numCards;
-
                 index = Math.max(0, Math.min(index + step, maxIndex));
                 this.numCards = index;
-            }
+            },
+            getImageUrl(imagePath) {
+                // construye la URL de la imagen
+                return `http://127.0.0.1:8000/get_image/${imagePath}`;
+                }
         },
         mounted () {
             this.getData();

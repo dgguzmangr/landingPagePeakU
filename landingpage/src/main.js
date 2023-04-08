@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
+//import Swiper from 'swiper'
+
+
 Vue.config.productionTip = false
 
 new Vue({

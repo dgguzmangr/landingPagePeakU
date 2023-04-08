@@ -21,17 +21,39 @@
         </header>
 
         <main class="container">
+        <div class="primercontainer">
           <SectionOne/>
+        </div>
+
+        <div class="segundocontainer">
           <SectionTwo/>
+        </div>
+        <div class="tercercontainer">
           <SectionThree/>
-          <SectionFour/>
-          <SectionFive/>
-          <SectionSix/>
+        </div>
+          
+        <div class="cuartocontainer">
+            <SectionFour/>
+        </div>
+          
+        <div class="quintocontainer">
+            <SectionFive/>
+        </div>
+          
+        <div class="sextocontainer">
+            <SectionSix/>
+        </div>
+        
+        <div class="septimocontainer">
           <SectionSeven/>
+        </div>
         </main>
-        <SectionFooter/>
-        <CarruselSection/>
+
+        
       </div>
+      <div class="footer">
+          <SectionFooter/>
+        </div>
     </body>
   </html>
 </template>
@@ -46,7 +68,6 @@ import SectionFive from './components/SectionFive.vue'
 import SectionSix from './components/SectionSix.vue'
 import SectionSeven from './components/SectionSeven.vue'
 import SectionFooter from './components/SectionFooter.vue'
-import CarruselSection from './components/CarruselSection.vue'
 
 export default {
   name: 'App',
@@ -59,8 +80,7 @@ export default {
     SectionFive,
     SectionSix,
     SectionSeven,
-    SectionFooter,
-    CarruselSection
+    SectionFooter
 }
 }
 </script>
@@ -84,7 +104,59 @@ export default {
 body{
     background-color: var(--whiteGray);
 }
+
+.header{
+    margin: 0;
+    width: 50%;
+    background-color: #FD8D3A;
+/*     margin-left: 710px;
+    margin-right: 710px;
+    margin-bottom: 0px;
+    background-color: #F7F8FC; */
+}
+
+.primercontainer{
+  margin: 0;
+  background: #FEFCFB;
+}
+
+.segundocontainer{
+  margin: 0;
+  padding-top: 40px;
+  background: #F7F8FC;
+}
+
+.tercercontainer{
+  margin: 0;
+  background: #F7F8FC;
+}
+
+.quintocontainer{
+  margin: 0;
+  background: #F7F8FC;
+}
+.sextocontainer{
+  margin: 0;
+  padding-top: 40px;
+  background: #F7F8FC;
+}
+
+.septimocontainer{
+  margin: 0;
+  background: #F7F8FC;
+}
+
+
+.footer{
+    margin: 0;
+/*     margin-left: 730px;
+    margin-right: 730px;
+    margin-bottom: 500px;
+    background-color: #F7F8FC;
+    padding: 4%; */
+}
 /*button*/
+
 .btn1 {
     background-color: var(--primaryO);
     color: var(--white);
@@ -131,5 +203,7 @@ p {
     font-family: var(--primaryFont);
     color: var(--primaryB);
 }
+
+
 </style>
 

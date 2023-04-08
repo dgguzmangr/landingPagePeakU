@@ -1,8 +1,8 @@
 <template>
     <section>
         <div class="row mt-5 mx-auto w-75 p-3">
-            <div class="col d-flex justify-content-center align-items-center text-left" style="background-color: var(--whiteGrey);">
-                <div>
+            <div class="col-12 d-flex justify-content-center align-items-center text-left" style="background-color: var(--whiteGrey);">
+                <div class="col-6">
                     <h2> What people say <span>about us.</span></h2>
                     <p>Our Clients send us bunch of smilies with our services and we love them.</p>
                     <div class="row py-5">
@@ -18,9 +18,9 @@
                         </button>
                     </div>
                 </div>
-                <div v-for="(card, index) in cards.slice(0, numCards)" :key="index" class="col " style="background-color: var(--white);">
+                <div v-for="(card, index) in cards.slice(0, numCards)" :key="index" class="col-6" style="background-color: var(--white);">
                     <div style="width: 70px; height: 70px" class="rounded">
-                        <img src= "@/assets/img/solenya.png" alt="userPhoto" width="70" height="70" class="rounded">
+                        <img src= "@/assets/img/Imagen1.png" alt="userPhoto" width="70" height="70" class="rounded">
                     </div>
                     <p>{{ card.comment }}</p>
                     <h5>{{ card.customer.name }} {{ card.customer.last_name }}</h5>

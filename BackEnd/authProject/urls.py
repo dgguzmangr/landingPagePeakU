@@ -28,8 +28,8 @@ urlpatterns = [
     path('show_articles/', landingPageView.show_articles),
     path('show_promotions/', landingPageView.show_promotions),
     path('show_opinions/', landingPageView.show_opinions),
+    path('get_image/', landingPageView.get_image)
 ]
-
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

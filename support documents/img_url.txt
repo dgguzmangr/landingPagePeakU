@@ -1,0 +1,5 @@
+<!--http://localhost:8000/show-destinations/${card.destination_img}-->
+                        <!--:src="localhost:8080/${card.destination_img}"-->
+                        <!--<img loading="lazy" :src="getImageUrl ('/media/destinations/Image-1.png')">-->
+                        <!--:src="destinations[0].destination_img"-->
+                        <!--"@/assets/img/Image-1.png"-->
